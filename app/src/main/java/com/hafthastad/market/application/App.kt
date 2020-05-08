@@ -3,7 +3,6 @@ package com.hafthastad.market.application
 import android.app.Application
 import com.hafthastad.market.BuildConfig
 import com.hafthastad.market.di.adapterModule
-import com.hafthastad.market.di.repositoryModule
 import com.hafthastad.market.di.viewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -27,7 +26,6 @@ class App : Application() {
             modules(
                 listOf(
                     viewModelModule,
-                    repositoryModule,
                     adapterModule
                 )
             )
