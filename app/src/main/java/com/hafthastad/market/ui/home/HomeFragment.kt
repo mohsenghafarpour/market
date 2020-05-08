@@ -16,6 +16,9 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
 
     override fun configEvents() {
         list_stuff.adapter = adapter
+        adapter.onItemClicked = { stuff, _ ->
+            viewModel.goToCategory(stuff)
+        }
     }
 
     override fun bindObservables() {

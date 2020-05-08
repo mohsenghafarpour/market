@@ -131,4 +131,8 @@ class HomeViewModel : BaseViewModel() {
 
         }
     }
+
+    fun goToCategory(stuff: Stuff) {
+        navigateTo(HomeFragmentDirections.actionHomeToCategory(stuff))
+    }
 }

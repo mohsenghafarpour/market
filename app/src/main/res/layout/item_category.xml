@@ -7,7 +7,7 @@
 
         <variable
             name="item"
-            type="com.hafthastad.market.data.Stuff" />
+            type="com.hafthastad.market.data.Category" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
@@ -17,12 +17,12 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
-        app:backgroundColor="@{item.categoryColor}"
+        app:backgroundColor="@{item.color}"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp">
 
         <TextView
-            android:id="@+id/txt_stuff"
+            android:id="@+id/txt_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -33,6 +33,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="کت تک" />
+            tools:text="پوشاک" />
     </com.google.android.material.card.MaterialCardView>
 </layout>
