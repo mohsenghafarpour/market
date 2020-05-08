@@ -23,6 +23,10 @@
         android:id="@+id/category"
         android:name="com.hafthastad.market.ui.category.CategoryFragment"
         android:label="CategoryFragment"
-        tools:layout="@layout/fragment_category" />
+        tools:layout="@layout/fragment_category" >
+        <argument
+            android:name="stuff"
+            app:argType="com.hafthastad.market.data.Stuff" />
+    </fragment>
 
 </navigation>
